@@ -9,14 +9,11 @@ In the integrated terminal, the application will be invoked by using the followi
 ## Mock Up
 
 ## Credits
-Starter code from US Berkeley/edX
-Guidance on what to include in a professional README from [Coding Boot Camp blog](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-Reference for license types from [ChooseALicense](https://choosealicense.com/licenses/)
+- Starter code from US Berkeley/edX   
+- Guidance on what to include in a professional README from [Coding Boot Camp blog](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)   
+- Reference for license types from [ChooseALicense](https://choosealicense.com/licenses/)   
 
-## License
+## Links
 
-This project is licensed under the [The Unlicense](http://unlicense.org/) license.
-
-## Link
-
-
+[Github repository](https://github.com/kyndalbowers/readme-generator)
+[Video Walkthrough](https://drive.google.com/file/d/1lv73AuzJhBdRkjnOCMN4LwzFwma7Ggby/view)
