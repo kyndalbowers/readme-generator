@@ -1,12 +1,23 @@
 // Function that returns a license badge based on which license is passed in
 // If there is no license, returns an empty string
 function renderLicenseBadge(license) {
-  if (license === 'AGPLv3') {
-    return '![License: AGPL v3](https://img.shields.io/badge/License-AGPLv3-blue.svg)';
-  } else if (license === 'Apache 2.0') {
-    return '![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
-  } else {
-    return '';
+  switch (license) {
+    case 'GNU AGPLv3':
+      return '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)';
+    case 'GNU GPLv3':
+      return '[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+    case 'Mozilla Public License 2.0':
+      return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-orange.svg)](https://www.mozilla.org/en-US/MPL/2.0/)';
+    case 'Apache License 2.0':
+      return '[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)';
+    case 'MIT License':
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+    case 'Boost Software License 1.0':
+      return '[![License: Boost 1.0](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)';
+    case 'The Unlicense':
+      return '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)';
+    default:
+      return '';
   }
 }
 
@@ -50,10 +61,12 @@ This project is licensed under the ${licenseLink} license.`;
 
 // Function to generate markdown for README
 function generateMarkdown(data) {
-  const licenseSection = renderLicenseSection(data.license);
+  const projectTitle = data.Title;
+  const selectedLicense = data.license;
+  const licenseBadge = renderLicenseBadge(selectedLicense);
+  const licenseSection = renderLicenseSection(selectedLicense);
 
-  return `# ${data.title}
-
+  return `${licenseBadge}\n\n# ${projectTitle}\n\n
 ## Description
 ${data.description}
 
