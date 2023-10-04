@@ -17,10 +17,11 @@ Open an integrated terminal and run the 'node index.js' command
 ## Credits
 
 Starter code from US Berkeley/edX <br>
-Guidance on what to include in a professional README from [Coding Boot Camp blog] (https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) <br>
-Reference for license types from [ChooseALicense] (https://choosealicense.com/licenses/)
+Guidance on what to include in a professional README from [Coding Boot Camp blog](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) <br>
+Reference for license types from [ChooseALicense](https://choosealicense.com/licenses/)
 
 ## Links
 
 [Github repository](https://github.com/kyndalbowers/readme-generator) <br>
 [Video Walkthrough](https://drive.google.com/file/d/1lv73AuzJhBdRkjnOCMN4LwzFwma7Ggby/view) <br>
+[Sample README file created with generator app](https://github.com/kyndalbowers/readme-generator/blob/main/sample-README.md)
